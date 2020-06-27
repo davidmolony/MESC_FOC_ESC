@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name INV_Board)(type KiCad)(uri ${KIPRJMOD}/INV_Board.pretty)(options "")(descr ""))
+)
