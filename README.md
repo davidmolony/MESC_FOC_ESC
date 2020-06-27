@@ -15,17 +15,17 @@ Layout optimised to minimise current loop path, and keep the board completely si
 For thermal management, the FETs have vias underneath the drains, which can be interfaced with a heatsink on the PCB underside, using silicone pad/thermal paste & insulator.
 
 # MCU uses:
-Timer1 on PA8,9,10 (high) and PB13,14,15 for PWM generation
-Onboard opamps for current sensing and paralelled comparators input on pins PA1,7, PB0
-Phase voltages can be measured on PA3,4,5, or alternatively, digitally read to detect ZC 
-Main voltage can be read on PA0
+Timer1 on PA8,9,10 (high) and PB13,14,15 for PWM generation.
+Onboard opamps for current sensing and paralelled comparators input on pins PA1,7, PB0.
+Phase voltages can be measured on PA3,4,5, or alternatively, digitally read to detect ZC .
+Main voltage can be read on PA0.
 
 # Interfaces:
-External Interfaces include Hall/Encoder, I2C, PWM in, UART, USB FS, 
+External Interfaces include Hall/Encoder, I2C, PWM in, UART, USB FS.
 Hall sensors on Timer4 PB6,7,8, alternatively Encoder can be run on Tim4 PB6,7
-Timer3 channel 1 for standard RC PWM input
-USART3 Tx Rx on PB10,11
-USB on PA11,12, with 1k5 pullup to signal FS mode. Canbe used for reflashing (hypothetically)
+Timer3 channel 1 for standard RC PWM input.
+USART3 Tx Rx on PB10,11.
+USB on PA11,12, with 1k5 pullup to signal FS mode. Canbe used for reflashing (hypothetically).
 I2C1 on PA15(SCL) and PB9(SDA), with a plug for a standard SSD1306 breakout. Alternatively, inertial sensor board could be plugged on breakout wire.
 
 Expected BoM cost:
