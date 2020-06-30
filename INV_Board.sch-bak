@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:INV_Board-cache
+EELAYER 29 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -649,9 +650,9 @@ Text GLabel 1850 7650 2    50   Input ~ 0
 USBD+
 Text GLabel 1350 7750 2    50   Input ~ 0
 USBD-
-Text GLabel 4550 3900 2    50   Input ~ 0
+Text GLabel 4400 3900 2    50   Input ~ 0
 USBD+
-Text GLabel 4550 3800 2    50   Input ~ 0
+Text GLabel 4400 3800 2    50   Input ~ 0
 USBD-
 Wire Wire Line
 	12050 6300 12150 6300
@@ -716,8 +717,6 @@ Text GLabel 4300 7600 2    50   Input ~ 0
 SWCLK
 Text GLabel 4300 7700 2    50   Input ~ 0
 SWDIO
-Text GLabel 4300 7800 2    50   Input ~ 0
-SWO
 Text GLabel 3650 4100 2    50   Input ~ 0
 SWCLK
 Text GLabel 4350 4000 2    50   Input ~ 0
@@ -750,24 +749,9 @@ F 3 "" H 1950 6500 50  0001 C CNN
 	1    1950 6500
 	0    -1   -1   0   
 $EndComp
-$Comp
-L power:+3V3 #PWR0143
-U 1 1 5EFAB7FC
-P 1950 6600
-F 0 "#PWR0143" H 1950 6450 50  0001 C CNN
-F 1 "+3V3" H 1965 6773 50  0000 C CNN
-F 2 "" H 1950 6600 50  0001 C CNN
-F 3 "" H 1950 6600 50  0001 C CNN
-	1    1950 6600
-	0    1    1    0   
-$EndComp
 Text GLabel 1950 6300 2    50   Input ~ 0
 STTx
 Text GLabel 1950 6400 2    50   Input ~ 0
-STRx
-Text GLabel 2350 3300 0    50   Input ~ 0
-STTx
-Text GLabel 2350 3400 0    50   Input ~ 0
 STRx
 $Comp
 L power:+3V3 #PWR0144
@@ -2654,17 +2638,7 @@ F 3 "" H 14350 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3650 3800 4350 3800
-Wire Wire Line
-	3650 3900 4350 3900
-Wire Wire Line
 	3650 4000 4350 4000
-Text Label 3900 3800 0    50   ~ 0
-Hall1USBD-
-Text Label 3900 3900 0    50   ~ 0
-Hall2USBD+
-Text Label 3900 4000 0    50   ~ 0
-Hall3SWDIO
 $Comp
 L power:GND #PWR0154
 U 1 1 5F24AB9F
@@ -2687,18 +2661,6 @@ F 3 "" H 1200 5200 50  0001 C CNN
 	1    1200 5200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1200 5300 1900 5300
-Wire Wire Line
-	1200 5400 1900 5400
-Wire Wire Line
-	1200 5500 1900 5500
-Text Label 1450 5300 0    50   ~ 0
-Hall1USBD-
-Text Label 1450 5400 0    50   ~ 0
-Hall2USBD+
-Text Label 1450 5500 0    50   ~ 0
-Hall3SWDIO
 Wire Wire Line
 	2050 2000 2350 2000
 $Comp
@@ -2783,8 +2745,6 @@ F 3 "" H 5550 7550 50  0001 C CNN
 	1    5550 7550
 	1    0    0    -1  
 $EndComp
-Text GLabel 2350 3000 0    50   Input ~ 0
-SWO
 $Comp
 L power:GND #PWR0162
 U 1 1 5F5A72DE
@@ -2972,17 +2932,6 @@ F 3 "~" H 3850 2900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:TestPoint TP1
-U 1 1 5F16C99E
-P 2350 2800
-F 0 "TP1" V 2545 2872 50  0000 C CNN
-F 1 "TestPoint" V 2454 2872 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 2550 2800 50  0001 C CNN
-F 3 "~" H 2550 2800 50  0001 C CNN
-	1    2350 2800
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:R_Small R32
 U 1 1 5F1560D4
 P 13650 8050
@@ -3148,17 +3097,6 @@ F 3 "~" H 1850 7550 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector:Conn_01x04_Male J6
-U 1 1 5EFA1FCA
-P 1750 6400
-F 0 "J6" H 1858 6681 50  0000 C CNN
-F 1 "Conn_01x04_Male" H 1858 6590 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_1x04_P1.27mm_Vertical" H 1750 6400 50  0001 C CNN
-F 3 "~" H 1750 6400 50  0001 C CNN
-	1    1750 6400
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:Conn_01x04_Male J5
 U 1 1 5EF93474
 P 1000 6400
@@ -3260,23 +3198,23 @@ $EndComp
 $Comp
 L Device:R_Small R22
 U 1 1 5F0593D4
-P 4450 3900
-F 0 "R22" H 4509 3946 50  0000 L CNN
-F 1 "R_5" H 4509 3855 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4450 3900 50  0001 C CNN
-F 3 "~" H 4450 3900 50  0001 C CNN
-	1    4450 3900
+P 4300 3900
+F 0 "R22" H 4359 3946 50  0000 L CNN
+F 1 "R_5" H 4359 3855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4300 3900 50  0001 C CNN
+F 3 "~" H 4300 3900 50  0001 C CNN
+	1    4300 3900
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R_Small R21
 U 1 1 5F05607D
-P 4450 3800
-F 0 "R21" H 4509 3846 50  0000 L CNN
-F 1 "R_5" H 4509 3755 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4450 3800 50  0001 C CNN
-F 3 "~" H 4450 3800 50  0001 C CNN
-	1    4450 3800
+P 4300 3800
+F 0 "R21" H 4359 3846 50  0000 L CNN
+F 1 "R_5" H 4359 3755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4300 3800 50  0001 C CNN
+F 3 "~" H 4300 3800 50  0001 C CNN
+	1    4300 3800
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -3852,7 +3790,7 @@ F 3 "~" H 10800 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LMR36510:LMR36510 U1
+L INV_Board-rescue:LMR36510-LMR36510 U1
 U 1 1 5EF36B4A
 P 1750 9850
 F 0 "U1" H 1750 9827 50  0000 C CNN
@@ -4033,4 +3971,170 @@ Connection ~ 11850 5900
 Wire Wire Line
 	11850 2400 12050 2400
 Connection ~ 12050 2400
+Text GLabel 2350 3800 0    50   Input ~ 0
+STRx
+Text GLabel 2350 3700 0    50   Input ~ 0
+STTx
+Wire Wire Line
+	2350 3300 1650 3300
+Wire Wire Line
+	2350 3400 1650 3400
+Wire Wire Line
+	2350 3500 1650 3500
+Text Label 2100 3300 2    50   ~ 0
+Hall1
+Text Label 2100 3400 2    50   ~ 0
+Hall2
+Text Label 2100 3500 2    50   ~ 0
+Hall3
+Wire Wire Line
+	1200 5300 1900 5300
+Wire Wire Line
+	1200 5400 1900 5400
+Wire Wire Line
+	1200 5500 1900 5500
+Text Label 1450 5300 0    50   ~ 0
+Hall1
+Text Label 1450 5400 0    50   ~ 0
+Hall2
+Text Label 1450 5500 0    50   ~ 0
+Hall3
+$Comp
+L Connector:Conn_01x03_Male J6
+U 1 1 5F014626
+P 1750 6400
+F 0 "J6" H 1858 6681 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 1858 6590 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical" H 1750 6400 50  0001 C CNN
+F 3 "~" H 1750 6400 50  0001 C CNN
+	1    1750 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 3800 4200 3800
+Wire Wire Line
+	4200 3900 3650 3900
+Text Label 3950 3800 0    50   ~ 0
+USBDD-
+Text Label 3950 3900 0    50   ~ 0
+USBDD+
+Text GLabel 2350 3600 0    50   Input ~ 0
+I2CSDA
+Text GLabel 3650 4200 2    50   Input ~ 0
+I2CSCL
+$Comp
+L Connector:Conn_01x04_Male J11
+U 1 1 5F0A80B5
+P 4350 6400
+F 0 "J11" H 4458 6681 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 4458 6590 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x04_P1.27mm_Vertical" H 4350 6400 50  0001 C CNN
+F 3 "~" H 4350 6400 50  0001 C CNN
+	1    4350 6400
+	1    0    0    -1  
+$EndComp
+Text GLabel 5100 6500 2    50   Input ~ 0
+I2CSCL
+Text GLabel 5100 6600 2    50   Input ~ 0
+I2CSDA
+$Comp
+L power:GND #PWR0143
+U 1 1 5F0DC0B7
+P 4550 6300
+F 0 "#PWR0143" H 4550 6050 50  0001 C CNN
+F 1 "GND" H 4555 6127 50  0000 C CNN
+F 2 "" H 4550 6300 50  0001 C CNN
+F 3 "" H 4550 6300 50  0001 C CNN
+	1    4550 6300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3V3 #PWR0166
+U 1 1 5F0E5972
+P 4750 6050
+F 0 "#PWR0166" H 4750 5900 50  0001 C CNN
+F 1 "+3V3" H 4765 6223 50  0000 C CNN
+F 2 "" H 4750 6050 50  0001 C CNN
+F 3 "" H 4750 6050 50  0001 C CNN
+	1    4750 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R_1k3
+U 1 1 5F115042
+P 5100 6400
+F 0 "R_1k3" H 5159 6446 50  0000 L CNN
+F 1 "R_5" H 5159 6355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5100 6400 50  0001 C CNN
+F 3 "~" H 5100 6400 50  0001 C CNN
+	1    5100 6400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R_1k2
+U 1 1 5F11B792
+P 5000 6500
+F 0 "R_1k2" H 5059 6546 50  0000 L CNN
+F 1 "R_5" H 5059 6455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5000 6500 50  0001 C CNN
+F 3 "~" H 5000 6500 50  0001 C CNN
+	1    5000 6500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4550 6600 5000 6600
+Wire Wire Line
+	5100 6600 5000 6600
+Connection ~ 5000 6600
+Wire Wire Line
+	5100 6500 4550 6500
+Wire Wire Line
+	4550 6400 4750 6400
+Wire Wire Line
+	4750 6400 4750 6300
+Wire Wire Line
+	5000 6400 4750 6400
+Connection ~ 4750 6400
+Wire Wire Line
+	5100 6300 4750 6300
+Connection ~ 4750 6300
+Wire Wire Line
+	4750 6300 4750 6050
+$Comp
+L Device:C_Small C30
+U 1 1 5F17FFE8
+P 5500 10500
+F 0 "C30" H 5592 10546 50  0000 L CNN
+F 1 "C_10uF_16V" H 5592 10455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5500 10500 50  0001 C CNN
+F 3 "~" H 5500 10500 50  0001 C CNN
+	1    5500 10500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 10400 5500 10400
+Wire Wire Line
+	5500 10600 5500 10700
+Wire Wire Line
+	5500 10700 4850 10700
+Connection ~ 4850 10700
+$Comp
+L Device:D_TVS D?
+U 1 1 5F1A83F9
+P 14250 850
+F 0 "D?" V 14204 929 50  0000 L CNN
+F 1 "D_TVS" V 14295 929 50  0000 L CNN
+F 2 "" H 14250 850 50  0001 C CNN
+F 3 "~" H 14250 850 50  0001 C CNN
+	1    14250 850 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	14250 700  14600 700 
+Wire Wire Line
+	14600 900  14450 900 
+Wire Wire Line
+	14450 900  14450 1000
+Wire Wire Line
+	14450 1000 14250 1000
 $EndSCHEMATC
