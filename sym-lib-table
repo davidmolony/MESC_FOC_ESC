@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name LMR36510)(type Legacy)(uri C:/Users/212735274/Documents/KiCad_PCBs/INV_Board/LMR36510.lib)(options "")(descr ""))
   (lib (name INV_Board-rescue)(type Legacy)(uri ${KIPRJMOD}/INV_Board-rescue.lib)(options "")(descr ""))
+  (lib (name DMM_Driver)(type Legacy)(uri ${KIPRJMOD}/DMM_Driver.lib)(options "")(descr ""))
 )
