@@ -4796,4 +4796,8 @@ F 3 "" H 4550 10200 50  0001 C CNN
 $EndComp
 Connection ~ 4000 10200
 Connection ~ 4550 10200
+Text GLabel 1500 2950 0    50   Input ~ 0
+SWO
+Text GLabel 2350 6100 2    50   Input ~ 0
+SWO
 $EndSCHEMATC
