@@ -14,6 +14,15 @@ Board dimensions 100mmx50mm, so that it can be panelised and manufactured by JLC
 
 It is not cross compatible with VESC software, and does not intend to be. VESC has run away with itself in terms of cost, firmware abstraction... in the opinion of this project's author.
 
+# Current Status:  
+First build has been made. All functions... function.
+Photos in folder! Video of prelim run to be added to Youtube.
+Step down works
+Step up for Gate drives works
+Chip works, all inputs and outputs works
+Some concerns about stability of internal opamps... Returning 1.5V instead of 1.6V. First chip soldered returned 1V, and fluctuated by +0.3/-0.1V. 
+Motor spins in BLDC mode (6 step) with hall sensors, on Propdrive 2826 1200kV and with APS8072 50kV. Current run up to 20A phase, with minimal PCB heating with no heatsink. Only run to 23V so far, owing to PSU limitation.
+FET switching time rather slow with 5 ohm resistors, limiting peak current to 2A (not counting FET and Gate drive resistance) will reduce to 2R7.
 
 # Layout:  
 Layout optimised to minimise current loop path, and keep the board completely single sided assembly.
