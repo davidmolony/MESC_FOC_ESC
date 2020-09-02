@@ -1,4 +1,4 @@
-15978330130982109
+15979928867577654
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -47874,6 +47874,13 @@ L_Toroid Vertical series Radial pin pitch 31.80mm  length 67.6mm width 36.1mm Vi
 2
 INV_Board
 DO-214AB
+
+
+0
+2
+2
+INV_Board
+XT60
 
 
 0
