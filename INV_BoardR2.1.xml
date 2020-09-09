@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>C:\Users\Lenovo\Documents\MESC_FOC_ESC\INV_Board.sch</source>
-    <date>09/09/2020 23:26:11</date>
+    <date>09/09/2020 11:56:43</date>
     <tool>Eeschema (5.1.2)-2</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -260,7 +260,7 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="LCSC">C28233</field>
+        <field name="LSCS potential">C28233</field>
         <field name="Mouser Part no.">710-885012207128</field>
         <field name="MouserAlt">581-08051C104M4Z2A</field>
       </fields>
@@ -452,11 +452,11 @@
       <tstamp>5F031A16</tstamp>
     </comp>
     <comp ref="R19">
-      <value>R_15k</value>
+      <value>R_18k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="LCSC">C22809</field>
+        <field name="LCSC">C25810</field>
       </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
@@ -491,7 +491,7 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="LCSC">C28233</field>
+        <field name="LSCS potential">C28233</field>
         <field name="Mouser Part no.">710-885012207128</field>
         <field name="MouserAlt">581-08051C104M4Z2A</field>
       </fields>
@@ -650,7 +650,7 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="LCSC">C28233</field>
+        <field name="LSCS potential">C28233</field>
         <field name="Mouser Part no.">710-885012207128</field>
         <field name="MouserAlt">581-08051C104M4Z2A</field>
       </fields>
@@ -811,7 +811,7 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="LCSC">C28233</field>
+        <field name="LSCS potential">C28233</field>
         <field name="Mouser Part no.">710-885012207128</field>
         <field name="MouserAlt">581-08051C104M4Z2A</field>
       </fields>
@@ -1076,7 +1076,7 @@
       <footprint>Package_QFP:LQFP-48_7x7mm_P0.5mm</footprint>
       <datasheet>http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00058181.pdf</datasheet>
       <fields>
-        <field name="LCSC">C108516</field>
+        <field name="LCSC">C81523</field>
         <field name="Mouser Part no.">511-STM32F303CBT6TR</field>
         <field name="MouserAlt">511-STM32F303CBT7</field>
       </fields>
@@ -1089,7 +1089,7 @@
       <footprint>Diode_SMD:D_SOD-323</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="LCSC">C150089</field>
+        <field name="LCSC"> C150089</field>
         <field name="Mouser Part no.">863-MM3Z16VST1G</field>
         <field name="MouserAlt">621-DDZ16CSF-7</field>
       </fields>
@@ -1102,7 +1102,7 @@
       <footprint>Diode_SMD:D_SOD-323</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="LCSC">C150089</field>
+        <field name="LCSC"> C150089</field>
         <field name="Mouser Part no.">863-MM3Z16VST1G</field>
         <field name="MouserAlt">621-DDZ16CSF-7</field>
       </fields>
@@ -1129,7 +1129,7 @@
       <footprint>Diode_SMD:D_SOD-323</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="LCSC">C150089</field>
+        <field name="LCSC"> C150089</field>
         <field name="Mouser Part no.">863-MM3Z16VST1G</field>
         <field name="MouserAlt">621-DDZ16CSF-7</field>
       </fields>
@@ -1142,7 +1142,7 @@
       <footprint>Diode_SMD:D_SOD-323</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="LCSC">C150089</field>
+        <field name="LCSC"> C150089</field>
         <field name="Mouser Part no.">863-MM3Z16VST1G</field>
         <field name="MouserAlt">621-DDZ16CSF-7</field>
       </fields>
@@ -1155,7 +1155,7 @@
       <footprint>Diode_SMD:D_SOD-323</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="LCSC">C150089</field>
+        <field name="LCSC"> C150089</field>
         <field name="Mouser Part no.">863-MM3Z16VST1G</field>
         <field name="MouserAlt">621-DDZ16CSF-7</field>
       </fields>
@@ -1168,7 +1168,7 @@
       <footprint>Diode_SMD:D_SOD-323</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="LCSC">C150089</field>
+        <field name="LCSC"> C150089</field>
         <field name="Mouser Part no.">863-MM3Z16VST1G</field>
         <field name="MouserAlt">621-DDZ16CSF-7</field>
       </fields>
@@ -1305,7 +1305,7 @@
       <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
       <datasheet>http://www.ti.com/lit/ds/symlink/tps763.pdf</datasheet>
       <fields>
-        <field name="LCSC">C88419</field>
+        <field name="LCSC">C110463</field>
         <field name="Mouser Part no.">998-MIC5504-3.3YM5TR</field>
         <field name="MouserAlt">998-MIC5317-3.3YM5TR</field>
       </fields>
