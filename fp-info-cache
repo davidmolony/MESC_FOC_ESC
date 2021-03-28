@@ -1,4 +1,4 @@
-15983149301559527
+15991211318804362
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -44079,12 +44079,47 @@ single digit 7 segemnt red/green LED
 10
 10
 DMM_Custom
+Heatsink
+
+
+0
+0
+0
+DMM_Custom
+Infineon_PG-HSOF-8-1
+Infineon HSOF-8-1 power mosfet http://www.infineon.com/cms/en/product/packages/PG-HSOF/PG-HSOF-8-1/
+mosfet hsof
+0
+71
+4
+DMM_Custom
+JST_PH_B6B-PH-SM4-TB_1x06-1MP_P2.00mm_Vertical
+JST PH series connector, B6B-PH-SM4-TB (http://www.jst-mfg.com/product/pdf/eng/ePH.pdf), generated with kicad-footprint-generator
+connector JST PH side entry
+0
+8
+7
+DMM_Custom
+JST_PH_B8B-PH-SM4-TB_1x08-1MP_P2.00mm_Vertical
+JST PH series connector, B8B-PH-SM4-TB (http://www.jst-mfg.com/product/pdf/eng/ePH.pdf), generated with kicad-footprint-generator
+connector JST PH side entry
+0
+10
+9
+DMM_Custom
 Molex_Pico-Clasp_202396-1007_1x10-1MP_P1.00mm_Horizontal
 Molex Pico-Clasp series connector, 202396-1007 (http://www.molex.com/pdm_docs/sd/2023960207_sd.pdf), generated with kicad-footprint-generator
 connector Molex Pico-Clasp top entry
 0
 22
 11
+DMM_Custom
+Wuerth_Redcube_M4
+
+
+0
+2
+1
 Ferrite_THT
 LairdTech_28C0236-0JW-10
 Ferrite, vertical, LairdTech 28C0236-0JW-10, https://assets.lairdtech.com/home/brandworld/files/28C0236-0JW-10.pdf, JW Miller core https://www.bourns.com/products/magnetic-products/j.w.-miller-through-hole-ferrite-beads-emi-filters
